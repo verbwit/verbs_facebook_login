@@ -7,11 +7,11 @@ function verb_fb_login_create_menu() {
 	add_menu_page('Verb\'s Facebook Login', 'Facebook Login Admin', 'administrator', __FILE__, 'vfbl_settings_page',plugins_url('../images/fb_icon.png', __FILE__));
 
 	//call register settings function
-	add_action( 'admin_init', 'register_mysettings' );
+	add_action( 'admin_init', 'register_vfbl_settings' );
 }
 
 
-function register_mysettings() {
+function register_vfbl_settings() {
 	//register our settings
 	register_setting( 'vfbl-settings-group', 'vfbl_app_id' );
 	register_setting( 'vfbl-settings-group', 'vfbl_app_secret' );
