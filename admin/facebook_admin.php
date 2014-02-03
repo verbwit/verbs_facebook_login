@@ -4,7 +4,7 @@ add_action('admin_menu', 'verb_fb_login_create_menu');
 function verb_fb_login_create_menu() {
 
 	//create new top-level menu
-	add_menu_page('Verb\'s Facebook Login', 'Facebook Login Admin', 'administrator', __FILE__, 'vfbl_settings_page',plugins_url('../images/fb_icon.png', __FILE__));
+	add_menu_page('Verb\'s Facebook Login', 'FB Login', 'administrator', __FILE__, 'vfbl_settings_page',plugins_url('../images/fb_icon.png', __FILE__));
 
 	//call register settings function
 	add_action( 'admin_init', 'register_vfbl_settings' );
